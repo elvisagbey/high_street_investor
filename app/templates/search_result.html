@@ -1,0 +1,88 @@
+<!-- Inherits from base template -->
+{% extends "base.html" %}
+
+<!-- Header block -->
+{% block header %}
+<div style="background-color: #031A3D; height:10rem;">
+    <div class="container text-white ">
+        <div class="row pt-3">
+
+            <!-- Brand - text logo -->
+            <div class="header_text_logo col-6 text-white text-nowrap align-middle">
+                <a href="#" class="text-white text-decoration-none">High Street Investor</a>
+            </div>
+
+            <!-- Side navigation menu bars -->
+            <div class="header_menu_bars col-6 text-end text-white" onclick="openNav()">
+                <i class="fas fa-bars fa-2x"></i>
+            </div>
+
+        </div>
+
+        <!-- main search input -->
+        <div class="header_search_bar row pt-2 text-center">
+            <div class="header_search_bar_title">
+                <p>
+                    Find licensed financial institutions in Ghana
+                </p>
+            </div>
+
+            <!-- search input field -->
+            <div class="row-padding">
+                <form class="main_search has-search form-group" id="main_search">
+                    <span class="fa fa-search form-control-feedback"></span>
+                    <input type="search" class="form-control rounded-pill" placeholder="Search" name="search">
+                </form>
+            </div>
+
+            <!-- quick links to list of banks, savings & loans etc -->
+
+        </div>
+
+    </div>
+</div>
+
+<!-- end of header block -->
+{% endblock header %}
+
+<!-- search results -->
+{% block main_body %}
+<div class="container mt-4">
+    <div class="row">
+        <h5>About 5 results</h5>
+
+    </div>
+    <br>
+
+    <div class="row">
+        <a href=""> <span> Legacy Savings & Loans </span></a>
+        <br>
+        <span>Category:</span> <span>Savings & Loans</span>
+        <span>Location:</span> <span>Kokomlemle, Accra</span>
+    </div>
+    <br>
+    <div class="row">
+        <a href=""> <span> Legacy Savings & Loans </span></a>
+        <br>
+        <span>Category:</span> <span>Savings & Loans</span>
+        <span>Location:</span> <span>Kokomlemle, Accra</span>
+    </div>
+    <br>
+    <div class="row">
+        <a href=""> <span> Legacy Savings & Loans </span></a>
+        <br>
+        <span>Category:</span> <span>Savings & Loans</span>
+        <span>Location:</span> <span>Kokomlemle, Accra</span>
+    </div>
+    <br>
+    <div class="row">
+        <a href=""> <span> Legacy Savings & Loans </span></a>
+        <br>
+        <span>Category:</span> <span>Savings & Loans</span>
+        <span>Location:</span> <span>Kokomlemle, Accra</span>
+    </div>
+    <br>
+</div>
+
+<!-- end of main body block-->
+{% endblock main_body %}

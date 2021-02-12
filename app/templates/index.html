@@ -1,0 +1,157 @@
+<!-- Inherits from base template -->
+{% extends "base.html" %}
+
+<!-- Header block -->
+{% block header %}
+<div style="background-color: #031A3D; height:20rem;">
+    <div class="container text-white ">
+        <div class="row pt-3">
+
+            <!-- Brand - text logo -->
+            <div class="header_text_logo col-6 text-white text-nowrap align-middle">
+                <a href="#" class="text-white text-decoration-none">High Street Investor</a>
+            </div>
+
+            <!-- Side navigation menu bars -->
+            <div class="header_menu_bars col-6 text-end text-white" onclick="openNav()">
+                <i class="fas fa-bars fa-2x"></i>
+            </div>
+
+        </div>
+
+        <!-- main search input -->
+        <div class="header_search_bar row pt-5 text-center">
+            <div class="header_search_bar_title">
+                <p>
+                    Find licensed financial institutions in Ghana
+                </p>
+            </div>
+
+            <!-- search input field -->
+            <div class="row-padding">
+                <form class="main_search has-search form-group" id="main_search">
+                    <span class="fa fa-search form-control-feedback"></span>
+                    <input type="search" class="form-control rounded-pill" placeholder="Search" name="search">
+                </form>
+            </div>
+
+            <!-- quick links to list of banks, savings & loans etc -->
+            <div class="row fi_categories pt-3">
+                <span>
+                    <a href="#" class="text-muted"><span class="mx-2">bank</span></a>
+                    <a href="#" class="text-muted"><span class="mx-2">bank</span></a>
+                    <a href="#" class="text-muted"><span class="mx-2">bank</span></a>
+                    <a href="#" class="text-muted"><span class="mx-2">bank</span></a>
+                    <a href="#" class="text-muted"><span class="mx-2">bank</span></a>
+
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<!-- end of header block -->
+{% endblock header %}
+
+<!-- main body block -->
+{% block main_body %}
+<div class="container mt-4">
+
+    <!-- top reads short border -->
+    <div class="top_reads_border row border-top border-4" style="width: 100px;">
+    </div>
+
+    <!-- section label "top reads" and link to view all -->
+    <div class="row top_reads mt-2">
+
+        <!-- label -->
+        <div class="top_reads_title col-4 text-nowrap">
+            <h5>Top Reads</h5>
+        </div>
+
+        <!-- link to view all articles -->
+        <div class="col-8 text-end">
+            <a href="">View All</a>
+        </div>
+    </div>
+
+    <!-- thumbnail/cards for all top reads -->
+    <div class="d-flex flex-wrap flex-row mt-3 justify-content-between">
+
+        <!-- top read article card -->
+        <div class="card mt-4 top_read_card">
+            <a href="" class="article_card text-decoration-none text-dark">
+                <img src="https://images.pexels.com/photos/6641247/pexels-photo-6641247.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                    class="card-img-top" alt="..." style=" height: 300px;">
+
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <small class="text-nowrap"> By:</small><small class="text-nowrap"> Elvis Agbesi</small>
+                    <p class="card-text">Some quick fkjkajfd jakdjfkadjf akdjfkadj f akdjfkadjfka kdjfkadjfka
+                        kdjfkajdkfa
+                        the card title anent.</p>
+                </div>
+            </a>
+        </div>
+        <div class="card mt-4 top_read_card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+        <div class="card mt-4 top_read_card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+        <div class="card mt-4 top_read_card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+        <div class="card mt-4 top_read_card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+        <div class="card mt-4 top_read_card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+        <div class="card mt-4 top_read_card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- end of main body block-->
+{% endblock main_body %}
