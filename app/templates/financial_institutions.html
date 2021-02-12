@@ -1,0 +1,86 @@
+<!-- Inherits from base template -->
+{% extends "base.html" %}
+
+<!-- Header block -->
+{% block header %}
+<div style="background-color: #031A3D; height:5rem;">
+    <div class="container text-white ">
+        <div class="row pt-3">
+
+            <!-- Brand - text logo -->
+            <div class="header_text_logo col-6 text-white text-nowrap align-middle">
+                <a href="#" class="text-white text-decoration-none">High Street Investor</a>
+            </div>
+
+            <!-- Side navigation menu bars -->
+            <div class="header_menu_bars col-6 text-end text-white" onclick="openNav()">
+                <i class="fas fa-bars fa-2x"></i>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- end of header block -->
+    {% endblock header %}
+
+    <!-- financial institutions block-->
+    {% block main_body %}
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-sm-2 mt-3">
+                <a href="{{url_for('main.index')}}" class="text-decoration-none">
+                    <i class="fas fa-chevron-left"></i>
+                    <span class="ps-3">Home</span>
+                </a>
+            </div>
+            <div class="col-sm-7 mt-3">
+                <span class="fw-bold">Universal Banks ( <span>5</span> )</span>
+            </div>
+            <div class="col-sm-3 mt-3">
+                <a href="" class="text-decoration-none ">
+                    <i class="fas fa-download"></i>
+                    <span class="ps-3">Download</span>
+                </a>
+            </div>
+        </div>
+
+        <br>
+
+        <!-- financial institutions table -->
+        <div class="row">
+            <table class="table table-responsive">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+    </div>
+
+    <!-- end of financial institutions block-->
+    {% endblock main_body %}
