@@ -8,6 +8,7 @@ load_dotenv()
 class Config:
     SECRET_KEY = os.environ.get('SECRET_KEY', secrets.token_urlsafe(16))
     SQLALCHEMY_TRACK_MODIFICATIONS = False
+    FLASK_ADMIN_SWATCH = os.environ.get('FLASK_ADMIN_SWATCH', 'cerulean')
 
 
 class DevelopmentConfig(Config):
